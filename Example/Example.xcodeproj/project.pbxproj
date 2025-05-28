@@ -3,12 +3,13 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 60;
+	objectVersion = 56;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		8104F0BB2DE6C1BC000086CA /* WWJWTAuthenticationToken in Frameworks */ = {isa = PBXBuildFile; productRef = 8104F0BA2DE6C1BC000086CA /* WWJWTAuthenticationToken */; };
 		8147CFDA2DE6D9040010B4F1 /* WWJWTAuthenticationToken in Frameworks */ = {isa = PBXBuildFile; productRef = 8147CFD92DE6D9040010B4F1 /* WWJWTAuthenticationToken */; };
+		8147CFDD2DE6DBF50010B4F1 /* WWJWTAuthenticationToken in Frameworks */ = {isa = PBXBuildFile; productRef = 8147CFDC2DE6DBF50010B4F1 /* WWJWTAuthenticationToken */; };
 		817567FC2CA2C2B400B24577 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 817567FB2CA2C2B400B24577 /* AppDelegate.swift */; };
 		817568002CA2C2B400B24577 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 817567FF2CA2C2B400B24577 /* ViewController.swift */; };
 		817568032CA2C2B400B24577 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 817568012CA2C2B400B24577 /* Main.storyboard */; };
@@ -32,6 +33,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8147CFDA2DE6D9040010B4F1 /* WWJWTAuthenticationToken in Frameworks */,
+				8147CFDD2DE6DBF50010B4F1 /* WWJWTAuthenticationToken in Frameworks */,
 				8104F0BB2DE6C1BC000086CA /* WWJWTAuthenticationToken in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -119,6 +121,7 @@
 			packageProductDependencies = (
 				8104F0BA2DE6C1BC000086CA /* WWJWTAuthenticationToken */,
 				8147CFD92DE6D9040010B4F1 /* WWJWTAuthenticationToken */,
+				8147CFDC2DE6DBF50010B4F1 /* WWJWTAuthenticationToken */,
 			);
 			productName = Example;
 			productReference = 817567F82CA2C2B400B24577 /* Example.app */;
@@ -149,7 +152,7 @@
 			);
 			mainGroup = 817567EF2CA2C2B400B24577;
 			packageReferences = (
-				8147CFD82DE6D9040010B4F1 /* XCLocalSwiftPackageReference "../../WWJWTAuthenticationToken" */,
+				8147CFDB2DE6DBF50010B4F1 /* XCRemoteSwiftPackageReference "WWJWTAuthenticationToken" */,
 			);
 			productRefGroup = 817567F92CA2C2B400B24577 /* Products */;
 			projectDirPath = "";
@@ -413,12 +416,16 @@
 		};
 /* End XCConfigurationList section */
 
-/* Begin XCLocalSwiftPackageReference section */
-		8147CFD82DE6D9040010B4F1 /* XCLocalSwiftPackageReference "../../WWJWTAuthenticationToken" */ = {
-			isa = XCLocalSwiftPackageReference;
-			relativePath = ../../WWJWTAuthenticationToken;
+/* Begin XCRemoteSwiftPackageReference section */
+		8147CFDB2DE6DBF50010B4F1 /* XCRemoteSwiftPackageReference "WWJWTAuthenticationToken" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/William-Weng/WWJWTAuthenticationToken";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
 		};
-/* End XCLocalSwiftPackageReference section */
+/* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
 		8104F0BA2DE6C1BC000086CA /* WWJWTAuthenticationToken */ = {
@@ -427,6 +434,11 @@
 		};
 		8147CFD92DE6D9040010B4F1 /* WWJWTAuthenticationToken */ = {
 			isa = XCSwiftPackageProductDependency;
+			productName = WWJWTAuthenticationToken;
+		};
+		8147CFDC2DE6DBF50010B4F1 /* WWJWTAuthenticationToken */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8147CFDB2DE6DBF50010B4F1 /* XCRemoteSwiftPackageReference "WWJWTAuthenticationToken" */;
 			productName = WWJWTAuthenticationToken;
 		};
 /* End XCSwiftPackageProductDependency section */

@@ -1,0 +1,15 @@
+{
+  "originHash" : "9d55a62d6d2d35129123f30ac6094f61ee65c0ddd3da986aac49620bfb98b9e0",
+  "pins" : [
+    {
+      "identity" : "wwjwtauthenticationtoken",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/William-Weng/WWJWTAuthenticationToken",
+      "state" : {
+        "revision" : "61584c43d69431a8b27b4c10874cf4b5488d030b",
+        "version" : "1.0.0"
+      }
+    }
+  ],
+  "version" : 3
+}
