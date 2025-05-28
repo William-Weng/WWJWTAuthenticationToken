@@ -15,7 +15,7 @@ open class WWJWTAuthenticationToken {
     public static let shared = WWJWTAuthenticationToken()
 }
 
-// MARK: - 公開工具
+// MARK: - 公開函式
 public extension WWJWTAuthenticationToken {
     
     /// [產生JWT Token](https://kucw.io/blog/jwt/)
@@ -82,7 +82,7 @@ public extension WWJWTAuthenticationToken {
             "iat": Int(Date().timeIntervalSince1970)
         ]
         
-        let result = WWJWTAuthenticationToken.shared.maker(header: header, payload: payload) { base64String in
+        let result = maker(header: header, payload: payload) { base64String in
             
             let signBase64String = "\(base64String.header).\(base64String.payload)"
             
@@ -101,7 +101,7 @@ public extension WWJWTAuthenticationToken {
     }
 }
 
-// MARK: - 公開工具
+// MARK: - 小工具
 private extension WWJWTAuthenticationToken {
     
     /// 更換符合JWT規定的文字編碼 (HTML特殊文字)
